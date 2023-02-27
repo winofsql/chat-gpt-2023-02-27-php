@@ -80,6 +80,7 @@ if (file_exists($filename)) {
 
 まず、モデルファイル board_model.php を作成します。このファイルでは、テキストファイルに投稿内容を書き込む write_post メソッドと、テキストファイルから投稿内容を取得する read_posts メソッドを定義します。
 </div>
+
 ```php
 <?php
 class BoardModel {
