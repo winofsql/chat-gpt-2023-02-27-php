@@ -113,6 +113,7 @@ class BoardModel {
 <div>
 次に、ビューファイル board_view.php を作成します。このファイルでは、投稿フォームと投稿一覧を表示します。
 </div>
+
 ```html
 <!DOCTYPE html>
 <html>
