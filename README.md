@@ -152,6 +152,7 @@ class BoardModel {
 <div>
 最後に、コントローラファイル board.php を作成します。このファイルでは、モデルとビューを読み込んで、投稿フォームが送信された場合はモデルの write_post メソッドを呼び出して投稿内容をテキストファイルに書き込み、投稿一覧を取得してビューに渡します。
 </div>
+
 ```php
 <?php
 require_once "board_model.php";
