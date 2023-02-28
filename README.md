@@ -166,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["name"]) && isset($_POS
 
 # ▲ 途中でコードが切れる
 
-### 切れたのでやり直しを求める
+### 切れたのでやり直しを求める( なんかエラー処理が増えて進化している... )
 ```php
 <?php
 require_once "board_model.php";
