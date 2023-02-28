@@ -165,3 +165,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["name"]) && isset($_POS
 ```
 
 # ▲ 途中でコードが切れる
+
+### 切れたのでやり直しを求める
+```php
+<?php
+require_once "board_model.php";
+
+$model = new BoardModel();
+$view = "board_view.php";
+
+$errors = [];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["name"]) && isset($_POST["message"])) {
+    $name = trim($_POST["name"]);
+    $message = trim($_POST["message"]);
+
+    if (empty($name)) {
+        $errors[] = "名前を入力してください。";
+    }
+    if (empty($message)) {
+        $errors[] = "投稿内容を入力してください。";
+    }
+
+    if (empty($errors)) {
+        $model->write_post($name, $message);
+    }
+}
+
+$posts = $model->read_posts();
+
+include $view;
+?>
+```
