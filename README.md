@@ -221,6 +221,7 @@ include $view;
 ### こんな事したい SQL を書いて下さいは楽勝で返してくれる
 
 ▼ こういうのもあり
+
 ![229726709-cffee7e6-d609-4df3-99d4-ef8cb3493bbd](https://user-images.githubusercontent.com/1501327/230769995-967e7bf0-1231-450b-b7c7-f0e296bfd1f4.png)
 
 https://github.com/winofsql/chat-gpt-syain-mtn
